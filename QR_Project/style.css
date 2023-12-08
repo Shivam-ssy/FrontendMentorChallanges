@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.main{
+    background-color:  hsl(212, 45%, 89%);
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+.favicon{
+    width: 18rem;
+    height: 18rem;
+    background-image: url("images/image-qr-code.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: inherit;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.text h3{
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.text p{
+    margin-bottom: 25px;
+}
+.text{
+    text-align: center;
+}
