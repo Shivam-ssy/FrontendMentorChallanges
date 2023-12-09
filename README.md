@@ -41,6 +41,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
     padding:0;
 
 }
+
 .main{
     background-color:  hsl(212, 45%, 89%);
     width: 100%;
@@ -48,7 +49,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    
 
 }
 .container{
@@ -59,11 +60,14 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
     padding: 15px;
     background-color: white;
     border-radius: 10px;
+    width: 85vw;
+    max-width: 19rem;
     position: relative;
 }
 .favicon{
-    width: 18rem;
+    width:80vw;
     height: 18rem;
+    max-width: 18rem;
     background-image: url("images/image-qr-code.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -71,6 +75,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
     background-attachment: inherit;
     margin-bottom: 15px;
     border-radius: 20px;
+    position: relative;
 }
 
 .text h3{
@@ -83,6 +88,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 .text{
     text-align: center;
 }
+
 ```
 
 
