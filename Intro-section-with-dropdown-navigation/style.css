@@ -203,9 +203,7 @@ nav .nav-part2-mobile{
     .nav-list-mobile img{
         height: 1em;
     }
-    .drop-down:hover .drop-down-content{
-        display: none;
-    }
+   
     .drop-down-content{
         display:none;
         position: relative;
