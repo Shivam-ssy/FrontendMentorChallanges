@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding:2em;
+    font-family: "Epilogue", sans-serif;
+}
+img{
+   user-select: none; 
+   -webkit-user-drag: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+ul{
+    list-style-type: none;
+}
+.nav-part1,.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: hsl(0, 0%, 41%) ;
+}
+
+.nav-part1 span img{
+    height: 2em;
+}
+.nav-part1 #nav-main-elem{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    gap: 20px;
+    
+    
+}
+.nav-part1 ul li:hover,.nav-part2>div:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+}
+/* .drop-down{
+    display: inline-block;
+    position: relative;
+} */
+.drop-down-content{
+    background-color:  hsl(0, 0%, 98%);
+    /* padding: 1em 2em; */
+    position:absolute;
+    color:hsl(0, 0%, 41%) ;
+    margin-left: auto;
+    display: none;
+    
+}
+.drop-down:hover .drop-down-content{
+    display: block;
+}
+.drop-down ul li{
+    padding: 0.5em 2em;
+
+}
+.nav-part1 img{
+    height:15px;
+    
+}
+.nav-part2 .nav-reg{
+    border: 1px solid hsl(0, 0%, 8%);
+    padding: 10px 18px;
+    border-radius: 0.8em;
+}
+nav .nav-part2-mobile{
+    display: none;
+}
+.nav-list-mobile{
+    display: none;
+  
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:calc(100vh-80px);
+    margin-top: 3em;
+}
+.main .text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    height: inherit;
+    width:40%;
+}
+.text-container h1{
+    font-size: 4.5em;
+    font-weight: 700;
+
+}
+.text-container button{
+    padding: 10px 20px;
+    width: fit-content;
+    font-weight: 700;
+    color: white;
+    background-color:hsl(0, 0%, 8%);
+    border-radius: 0.8em; 
+
+}
+.text-container button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+}
+.logo-container{
+    display: flex;
+    gap: 2em;
+    margin-top: 3em;
+    flex-wrap: wrap;
+}
+.logo-container img{
+    height: 20px;
+   
+}
+.image-container img{
+    height:35em ;
+    aspect-ratio: 2/3;
+}
+.main .text-container br{
+    display: block;
+    content: " ";
+}
+@media screen and (max-width:900px) {
+    nav .nav-part1 #nav-main-elem{
+        display: none;
+    }
+    nav .nav-part2{
+        display: none;
+    }
+    nav .nav-part2-mobile{
+        display: contents;
+    }
+}
+@media screen and (max-width:750px){
+    body{
+        padding: 0px;
+    }
+    nav{
+       width: auto;
+       padding: 20px;
+    }
+    .nav-list-mobile{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        background-color:  hsl(0, 0%, 98%);
+        display: inline-block;
+        padding: 6em 0em;
+        visibility: hidden;
+    }
+   
+    .nav-list-mobile button{
+        display: block;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 1.5em;
+        right: 2em;
+        
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+       margin: 4em 2em;
+        gap: 1.5em;
+       
+    }
+    .nav-list-mobile ul{
+       
+        position: relative;
+    }
+    .nav-list-mobile ul li{
+        position: relative;
+    }
+    .nav-part2{
+        margin-top: 2em;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+    }
+    .nav-part2 .nav-reg{
+      padding: 1em 4em 1em 4em;
+    }
+    .nav-list-mobile button img{
+        height: 2em;
+    }
+    .nav-list-mobile ul li{
+        padding: 0.7em 3em;
+    }
+    .nav-list-mobile img{
+        height: 1em;
+    }
+    .drop-down:hover .drop-down-content{
+        display: none;
+    }
+    .drop-down-content{
+        display:none;
+        position: relative;
+        margin-left: -2em;
+    }
+    .main{
+        width: 100%;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .main .text-container{
+        width: 100%;
+        align-items: center;
+        gap: 1em;
+        margin-top: 3em;
+        text-align: center;
+       
+    }
+    .main .text-container br{
+        display: none;
+    }
+    .text-container h1{
+        font-size: 2.5em;
+    }
+    .image-container{
+        width: 100%;
+    }
+    .image-container img{
+        width: 100%;
+       height: 40vh;
+    }
+}
